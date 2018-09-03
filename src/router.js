@@ -24,6 +24,11 @@ export default new Router({
       path: "/scroll",
       name: "scroll",
       component: () => import("./views/Scroll.vue")
+    },
+    {
+      path: "/linked",
+      name: "linked",
+      component: () => import("./views/Linked.vue")
     }
   ],
   mode: "history",
