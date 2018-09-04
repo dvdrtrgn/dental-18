@@ -21,7 +21,8 @@ $serif: wfSerif, Georgia, serif;
 @import './tweak.scss';
 
 #app {
-  @media (min-width: 0) and (max-width: $break) {
-    padding: 0;
-  }
+  padding: 0;
+}
+#nav {
+  display: none;
 }

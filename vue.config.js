@@ -1,4 +1,5 @@
 module.exports = {
+  baseUrl: "/wf-ecg/rs/0/",
   css: {
     loaderOptions: {
       sass: {

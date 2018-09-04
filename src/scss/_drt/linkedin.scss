@@ -5,10 +5,10 @@
   }
   & {
     background-color: white;
-    border: 1px solid $lighter;
+    // border: 1px solid $lighter;
     font-family: $sans;
     line-height: 1.333;
-    margin: 1rem auto;
+    margin: auto;
     max-width: 46rem;
     text-align: left;
   }
@@ -29,6 +29,10 @@
   #CTA {
     background: none;
     padding-top: 0;
+  }
+  header.inset {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .inset {

@@ -3,16 +3,17 @@ import Router from "vue-router";
 import Home from "./views/Home.vue";
 
 Vue.use(Router);
+var stub = "/wf-ecg/rs/0";
 
 export default new Router({
   routes: [
     {
-      path: "/",
+      path: stub + "/home",
       name: "home",
       component: Home
     },
     {
-      path: "/about",
+      path: stub + "/about",
       name: "about",
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
@@ -21,14 +22,14 @@ export default new Router({
         import(/* webpackChunkName: "about" */ "./views/About.vue")
     },
     {
-      path: "/scroll",
+      path: stub + "/scroll",
       name: "scroll",
       component: () => import("./views/Scroll.vue")
     },
     {
-      path: "/linked",
-      name: "linked",
-      component: () => import("./views/Linked.vue")
+      path: stub + "/",
+      name: "linkedin",
+      component: () => import("./views/Linkedin.vue")
     }
   ],
   mode: "history",
