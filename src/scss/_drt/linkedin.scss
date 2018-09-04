@@ -1,0 +1,32 @@
+.linkedin {
+  // font-size: 1.1rem;
+  * {
+    box-sizing: border-box;
+  }
+  & {
+    background-color: white;
+    border: 1px solid $lighter;
+    font-family: $sans;
+    line-height: 1.333;
+    margin: 1em auto;
+    max-width: 46rem;
+    text-align: left;
+  }
+
+  .inset {
+    padding: 3em $inset;
+
+    @media (min-width: 0) and (max-width: $break) {
+      padding: 3em 1rem;
+    }
+  }
+  .outset {
+    margin: 0 -1em;
+    padding-left: 1em;
+    padding-right: 1em;
+
+    @media (min-width: 0) and (max-width: $break) {
+      margin: 0;
+    }
+  }
+}

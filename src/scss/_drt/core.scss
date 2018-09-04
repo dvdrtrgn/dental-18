@@ -1,0 +1,19 @@
+@import '../settings.scss';
+// colors
+$red: #bb0826;
+$light: #ccc;       $gray: #999;    $dark: #44464a;
+$lighter: #ddd;     $grayer: #888;  $darker: #333;
+$lightest: #f5f5f5; $grayest: #777; $darkest: #222;
+// sizes
+$break: 40rem;
+$inset: 8rem;
+// strings
+$ico: wfIcons;
+$sans:  wfSans, Verdana, sans-serif;
+$serif: wfSerif, Georgia, serif;
+
+@import './custom.scss';
+@import './fancy.scss';
+@import './linkedin.scss';
+@import './numeral.scss';
+@import './tweak.scss';

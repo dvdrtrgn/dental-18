@@ -1,0 +1,59 @@
+%revdeco {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.linkedin {
+  a {
+    @extend %revdeco;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  header {
+    font-size: 1.1em;
+  }
+  h2 {
+    font-size: 1.7em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+
+  h1,
+  h2,
+  h3 {
+    color: $red;
+    font-family: $serif;
+    line-height: 1.2;
+  }
+
+  hr {
+    background: $light;
+    border: 0;
+    height: 2px;
+  }
+
+  img {
+    background: $gray;
+  }
+  .card img {
+    height: 9vh;
+    margin: 1em;
+    width: 16vh;
+  }
+  .hero img {
+    display: block;
+    height: 33vh;
+    width: 100%;
+  }
+  .tooth img {
+    height: 16vh;
+    margin: 1em 1em 4em 0;
+    width: 16vh;
+  }
+}

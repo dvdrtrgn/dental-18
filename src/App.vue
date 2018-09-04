@@ -11,6 +11,11 @@
 </template>
 
 <style lang='scss'>
+body,
+html {
+  margin: auto;
+  scroll-behavior: smooth;
+}
 #app {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;

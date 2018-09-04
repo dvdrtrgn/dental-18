@@ -1,0 +1,28 @@
+.cap {
+  text-transform: uppercase;
+}
+.center {
+  text-align: center;
+}
+.columnize {
+  display: flex;
+  justify-content: space-around;
+}
+.hide {
+  display: none;
+}
+.light {
+  font-weight: 400;
+}
+.sans {
+  font-family: $sans;
+}
+.serif {
+  font-family: $serif;
+}
+.shade {
+  background-color: $lightest;
+}
+.widen {
+  margin: 2em -2em;
+}
