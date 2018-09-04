@@ -25,5 +25,15 @@ export default new Router({
       name: "scroll",
       component: () => import("./views/Scroll.vue")
     }
-  ]
+  ],
+  mode: "history",
+  scrollBehavior(to, from, savedPosition) {
+    // to, from, savedPosition
+    if (to.hash) {
+      window.console.log("scrollBehavior", [to, from, savedPosition]);
+      return {
+        selector: to.hash
+      };
+    }
+  }
 });
