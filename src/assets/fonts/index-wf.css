@@ -1,0 +1,56 @@
+/* @import 'font-awesome.css'; */
+@font-face{ font-family: 'wfIcons'; font-style: normal; font-weight: 400; src: url('FontAwesome.ttf'); }
+
+@font-face{ font-family: 'wfSerif'; font-style: normal; font-weight: 300; src: url('wf-archer-lf/ArcherLF-Light.ttf'); }
+@font-face{ font-family: 'wfSerif'; font-style: normal; font-weight: 400; src: url('wf-archer-lf/ArcherLF-Book.ttf'); }
+@font-face{ font-family: 'wfSerif'; font-style: normal; font-weight: 500; src: url('wf-archer-lf/ArcherLF-Medium.ttf'); }
+@font-face{ font-family: 'wfSerif'; font-style: normal; font-weight: 600; src: url('wf-archer-lf/ArcherLF-Semibold.ttf'); }
+@font-face{ font-family: 'wfSerif'; font-style: normal; font-weight: 700; src: url('wf-archer-lf/ArcherLF-Bold.ttf'); }
+
+@font-face{ font-family: 'wfSerif'; font-style: italic; font-weight: 300; src: url('wf-archer-lf/ArcherLF-LightItal.ttf'); }
+@font-face{ font-family: 'wfSerif'; font-style: italic; font-weight: 400; src: url('wf-archer-lf/ArcherLF-BookItal.ttf'); }
+@font-face{ font-family: 'wfSerif'; font-style: italic; font-weight: 500; src: url('wf-archer-lf/ArcherLF-MediumItal.ttf'); }
+@font-face{ font-family: 'wfSerif'; font-style: italic; font-weight: 600; src: url('wf-archer-lf/ArcherLF-SembdItal.ttf'); }
+@font-face{ font-family: 'wfSerif'; font-style: italic; font-weight: 700; src: url('wf-archer-lf/ArcherLF-BoldItal.ttf'); }
+
+@font-face{ font-family: 'wfSerifPro'; font-style: normal; font-weight: 300; src: url('wf-archer-pro/ArcherPro-Light.ttf'); }
+@font-face{ font-family: 'wfSerifPro'; font-style: normal; font-weight: 400; src: url('wf-archer-pro/ArcherPro-Book.ttf'); }
+@font-face{ font-family: 'wfSerifPro'; font-style: normal; font-weight: 500; src: url('wf-archer-pro/ArcherPro-Medium.ttf'); }
+@font-face{ font-family: 'wfSerifPro'; font-style: normal; font-weight: 600; src: url('wf-archer-pro/ArcherPro-Semibold.ttf'); }
+@font-face{ font-family: 'wfSerifPro'; font-style: normal; font-weight: 700; src: url('wf-archer-pro/ArcherPro-Bold.ttf'); }
+
+@font-face{ font-family: 'wfSerifPro'; font-style: italic; font-weight: 300; src: url('wf-archer-pro/ArcherPro-LightItal.ttf'); }
+@font-face{ font-family: 'wfSerifPro'; font-style: italic; font-weight: 400; src: url('wf-archer-pro/ArcherPro-BookItal.ttf'); }
+@font-face{ font-family: 'wfSerifPro'; font-style: italic; font-weight: 500; src: url('wf-archer-pro/ArcherPro-MediumItal.ttf'); }
+@font-face{ font-family: 'wfSerifPro'; font-style: italic; font-weight: 600; src: url('wf-archer-pro/ArcherPro-SembdItal.ttf'); }
+@font-face{ font-family: 'wfSerifPro'; font-style: italic; font-weight: 700; src: url('wf-archer-pro/ArcherPro-BoldItal.ttf'); }
+
+@font-face{ font-family: 'wfSans'; font-style: normal; font-weight: 300; src: url('wf-myriad-pro/MyriadPro-Light.ttf'); }
+@font-face{ font-family: 'wfSans'; font-style: normal; font-weight: 400; src: url('wf-myriad-pro/MyriadPro-Regular.ttf'); }
+@font-face{ font-family: 'wfSans'; font-style: normal; font-weight: 600; src: url('wf-myriad-pro/MyriadPro-Semibold.ttf'); }
+@font-face{ font-family: 'wfSans'; font-style: normal; font-weight: 700; src: url('wf-myriad-pro/MyriadPro-Bold.ttf'); }
+/* @font-face{ font-family: 'wfSans'; font-style: italic; font-weight: 300; src: url('wf-myriad-pro/MyriadPro-LightIt.ttf'); } */
+@font-face{ font-family: 'wfSans'; font-style: italic; font-weight: 400; src: url('wf-myriad-pro/MyriadPro-It.ttf'); }
+@font-face{ font-family: 'wfSans'; font-style: italic; font-weight: 600; src: url('wf-myriad-pro/MyriadPro-SemiboldIt.ttf'); }
+@font-face{ font-family: 'wfSans'; font-style: italic; font-weight: 700; src: url('wf-myriad-pro/MyriadPro-BoldIt.ttf'); }
+
+@font-face{ font-family: 'wfSansCond'; font-style: normal; font-weight: 400; src: url('wf-myriad-pro/MyriadPro-Cond.ttf'); }
+@font-face{ font-family: 'wfSansCond'; font-style: normal; font-weight: 700; src: url('wf-myriad-pro/MyriadPro-BoldCond.ttf'); }
+@font-face{ font-family: 'wfSansCond'; font-style: italic; font-weight: 400; src: url('wf-myriad-pro/MyriadPro-CondIt.ttf'); }
+@font-face{ font-family: 'wfSansCond'; font-style: italic; font-weight: 700; src: url('wf-myriad-pro/MyriadPro-BoldCondIt.ttf'); }
+
+/*
+NOTE:
+  All fonts are WOFF format --- renamed to ttf to deal with bad server config on MFAL
+
+  WEIGHT INDEX
+    100 - Thin
+    200 - Extra Light, Ultra Light
+    300 - Light
+    400 - Normal, Book, Regular
+    500 - Medium
+    600 - Semi Bold, Demi Bold
+    700 - Bold
+    800 - Extra Bold, Ultra Bold
+    900 - ßlack, Heavy
+*/
