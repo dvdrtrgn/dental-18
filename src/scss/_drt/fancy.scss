@@ -22,7 +22,7 @@ a.fancy {
 
 blockquote.fancy {
   border: 0 solid $light;
-  border-width: 2px 0;
+  border-width: $hair 0;
   font-family: $serif;
   padding: 1em;
 
@@ -81,11 +81,23 @@ nav.fancy {
   font-size: 0.9em;
   padding: 0.5rem 1rem;
   justify-content: space-between;
+  line-height: 0.8;
+
+  @media (min-width: 0) and (max-width: 480px) {
+    flex-wrap: wrap;
+    line-height: 1.8;
+  }
 
   .logo {
     text-align: left;
+    img {
+      background: none;
+      height: 1rem;
+      width: 10rem;
+    }
   }
   .cta {
+    line-height: 1.2;
     text-align: right;
     a {
       color: white;

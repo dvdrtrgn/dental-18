@@ -8,22 +8,40 @@
     border: 1px solid $lighter;
     font-family: $sans;
     line-height: 1.333;
-    margin: 1em auto;
+    margin: 1rem auto;
     max-width: 46rem;
     text-align: left;
   }
 
+  section.inset {
+    background-image: url("../assets/images/tooth2.png");
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+  }
+  section.inset.shade {
+    background-image: url("../assets/images/tooth1.png");
+  }
+
+  #S1 {
+    background: none;
+    padding-top: 1rem;
+  }
+  #CTA {
+    background: none;
+    padding-top: 0;
+  }
+
   .inset {
-    padding: 3em $inset;
+    padding: 3rem $inset;
 
     @media (min-width: 0) and (max-width: $break) {
-      padding: 3em 1rem;
+      padding: 3rem 1rem;
     }
   }
   .outset {
-    margin: 0 -1em;
-    padding-left: 1em;
-    padding-right: 1em;
+    margin: 0 -1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 
     @media (min-width: 0) and (max-width: $break) {
       margin: 0;

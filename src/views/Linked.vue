@@ -16,7 +16,7 @@
 
     nav.fancy.columnize
       .logo
-        img(src='#')
+        img(src='@/assets/images/wf-oneline.svg')
       .cta
         a(href='#CTA') Find out how Wells Fargo can help
 
@@ -39,7 +39,7 @@
             li: a(href='#S5') #[span.numeral 5]
 
       div.hero
-        img(src='#')
+        img(src='@/assets/images/hero.png')
 
       section#S1.inset
         h3.
@@ -99,18 +99,20 @@
           Features like paperless processing tools, marketing help, advertising tips and tools,
           and custom reports from your financing provider make it easier.
 
-        blockquote.columnize.widen
-          div.tooth
-            img(src='#')
+        blockquote.tooth
           div
-            p.
-              20% #[br]
-              of your dental patients could benefit from patient financing.*
-            p.
+            img(src='@/assets/images/tooth.png')
+
+          div.serif
+            p.enlarge.
+              #[span.number 20]#[span.symbol %] #[br]
+              of your dental patients could <br>benefit from patient financing.*
+            p.enlarge: b.
               Do they know it’s an option?
-            small.
-              * Dentists: Is your third-party financing working for your practice?,
-              DentistryIQ.com, May 2018
+            p: small.
+              * Dentists:
+              #[i Is your third-party financing working for your practice?]
+              —DentistryIQ.com, May 2018
 
       section#CTA.inset
         hr
@@ -121,7 +123,7 @@
 
         .center
           .card
-            img(src='#')
+            img(src='@/assets/images/card.png')
 
           h3 Would you like to learn more?
 

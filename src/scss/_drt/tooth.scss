@@ -1,0 +1,42 @@
+.tooth {
+  @extend .columnize;
+  @extend .widen;
+
+  img {
+    height: 10rem;
+    margin: 2rem 2rem 0 0;
+    width: 10rem;
+  }
+  p {
+    line-height: 1.2;
+    margin-bottom: 0;
+  }
+
+  .number {
+    color: $red;
+    font-size: 4em;
+    font-weight: 600;
+    margin-left: -0.1em;
+  }
+  .symbol {
+    color: $red;
+    font-size: 3.2em;
+    font-weight: 800;
+  }
+}
+
+blockquote.tooth {
+  background-image: url("../assets/images/toothy.png");
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: 489px;
+  padding-left: 1em;
+  padding-top: 1em;
+
+  @media (min-width: 0) and (max-width: $break) {
+    flex-wrap: wrap;
+    line-height: 1.8;
+    margin: 0;
+    text-align: center;
+  }
+}

@@ -7,6 +7,7 @@ $lightest: #f5f5f5; $grayest: #777; $darkest: #222;
 // sizes
 $break: 40rem;
 $inset: 8rem;
+$hair: 0.1rem;
 // strings
 $ico: wfIcons;
 $sans:  wfSans, Verdana, sans-serif;
@@ -16,4 +17,11 @@ $serif: wfSerif, Georgia, serif;
 @import './fancy.scss';
 @import './linkedin.scss';
 @import './numeral.scss';
+@import './tooth.scss';
 @import './tweak.scss';
+
+#app {
+  @media (min-width: 0) and (max-width: $break) {
+    padding: 0;
+  }
+}

@@ -8,6 +8,12 @@
   display: flex;
   justify-content: space-around;
 }
+.enlarge {
+  font-size: 120%;
+}
+.ensmall {
+  font-size: 84%;
+}
 .hide {
   display: none;
 }
@@ -24,5 +30,6 @@
   background-color: $lightest;
 }
 .widen {
-  margin: 2em -2em;
+  margin-left: -2em;
+  margin-right: -2em;
 }
