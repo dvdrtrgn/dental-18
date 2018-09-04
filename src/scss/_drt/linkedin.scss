@@ -5,7 +5,7 @@
   }
   & {
     background-color: white;
-    // border: 1px solid $lighter;
+    border: 1px solid $lighter;
     font-family: $sans;
     line-height: 1.333;
     margin: auto;
@@ -29,6 +29,11 @@
   #CTA {
     background: none;
     padding-top: 0;
+    .widen p:last-child() {
+      border-left: $hair solid $light;
+      padding-left: 4rem;
+    }
+
   }
   header.inset {
     padding-top: 1rem;

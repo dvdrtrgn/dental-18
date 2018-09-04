@@ -10,3 +10,9 @@ new Vue({
   store,
   render: h => h(App)
 }).$mount("#app");
+
+setTimeout(function() {
+  var W = window;
+  W._msie = Boolean(~W.navigator.userAgent.indexOf("rident"));
+  W.document.documentElement.classList.add(W._msie ? "msie" : "norm");
+}, 999);

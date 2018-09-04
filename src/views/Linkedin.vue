@@ -1,20 +1,13 @@
-<style lang='scss'>
-@import url("../assets/fonts/index-wf.css");
-@import "@/scss/_drt/core.scss";
-
-.linkedin {
-}
-</style>
-
 <template lang='pug'>
   -
     var CTA = 'https://retailservices.wellsfargo.com/eforms/request-info?';
     CTA += 'utm_source=wfrshp&utm_medium=cta&utm_campaign=contactus';
 
   .linkedin
-    title.hide Wells Fargo Health Advantage | LinkedIn Lead Generation Campaign, Dental segment
+    h1.hide Wells Fargo Health Advantage | LinkedIn Lead Generation Campaign, Dental segment
 
     nav.fancy.columnize
+      h1.hide Bottom navigation
       .logo
         img(src='@/assets/images/wf-oneline.svg')
       .cta
@@ -31,6 +24,7 @@
           asking these questions can help you find a program that keeps you smiling.
 
         nav
+          h2.hide Main navigation
           ul.numeral.columnize
             li: a(href='#S1') #[span.numeral 1]
             li: a(href='#S2') #[span.numeral 2]
@@ -39,7 +33,7 @@
             li: a(href='#S5') #[span.numeral 5]
 
       div.hero
-        img(src='@/assets/images/hero.png')
+        img(src='@/assets/images/hero.jpg')
 
       section#S1.inset
         h3.
@@ -102,6 +96,7 @@
         blockquote.tooth
           div
             img(src='@/assets/images/tooth.png')
+            div(style='color: silver') \ circle to be animated \
 
           div.serif
             p.enlarge.
@@ -110,9 +105,8 @@
             p.enlarge: b.
               Do they know it’s an option?
             p: small.
-              * Dentists:
-              #[i Is your third-party financing working for your practice?]
-              —DentistryIQ.com, May 2018
+              * #[i Dentists: Is your third-party financing working for your practice?]
+              — DentistryIQ.com, May 2018
 
       section#CTA.inset
         hr
@@ -151,5 +145,12 @@
       p.
         Wells Fargo Retail Services is a division of Wells Fargo Bank, N.A.
 
-
 </template>
+
+<style lang='scss'>
+@import url("../assets/fonts/index-wf.css");
+@import "@/scss/_drt/core.scss";
+
+.linkedin {
+}
+</style>
