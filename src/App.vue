@@ -1,13 +1,13 @@
 <template>
   <div id="App">
     <div id="Nav">
-      <router-link to="/">LinkedIn</router-link>
+      <router-link to="/">LinkedIn v1</router-link>
       |
       <router-link to="/home">Home</router-link>
       |
       <router-link to="/about">About</router-link>
       |
-      <router-link to="/scroll">Scroll</router-link>
+      <router-link to="/scroll">Test</router-link>
     </div>
     <router-view/>
   </div>

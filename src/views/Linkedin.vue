@@ -9,13 +9,13 @@
     nav.fancy.columnize
       h1.hide Bottom navigation
       .logo
-        img(src='@/assets/images/wf-oneline.svg')
+        img(src='@/assets/svgs/wf-oneline.svg')
       .cta
         a(href='#CTA') Find out how Wells Fargo can help
 
-    //main
+    // main.pug
     include ./Linkedin/main.pug
-    //foot
+    // foot.pug
     include ./Linkedin/foot.pug
     //
 </template>
