@@ -148,9 +148,6 @@
 </template>
 
 <style lang='scss'>
-@import url("../assets/fonts/index-wf.css");
-@import "@/scss/_drt/core.scss";
-
-.linkedin {
-}
+@import url('../assets/fonts/index-wf.css');
+@import '@/scss/_drt/core.scss';
 </style>

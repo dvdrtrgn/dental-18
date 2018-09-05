@@ -22,7 +22,7 @@ html {
   background-color: #eee;
   border: 1px solid #ddd;
   color: #2c3e50;
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   min-height: 100vh;
   padding: 1em;
   text-align: center;
