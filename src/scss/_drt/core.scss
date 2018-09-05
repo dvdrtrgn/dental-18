@@ -1,8 +1,8 @@
 @import '../settings.scss';
 // colors
 $red: #bb0826;
-$light: #ccc;       $gray: #999;    $dark: #44464a;
-$lighter: #ddd;     $grayer: #888;  $darker: #333;
+$light: #ddd;       $gray: #999;    $dark: #44464a;
+$lighter: #eee;     $grayer: #888;  $darker: #333;
 $lightest: #f5f5f5; $grayest: #777; $darkest: #222;
 // sizes
 $break: 40rem;
@@ -13,16 +13,26 @@ $ico: wfIcons;
 $sans:  wfSans, Verdana, sans-serif;
 $serif: wfSerif, Georgia, serif;
 
-@import './custom.scss';
-@import './fancy.scss';
-@import './linkedin.scss';
-@import './numeral.scss';
-@import './tooth.scss';
+body.linkedin {
+  @import './linkedin.scss';
+
+  #Nav {
+    background-color: $lighter;
+    cursor: none;
+    max-height: 1px;
+    padding: 0;
+    transition: 1s ease-in;
+
+    &:hover {
+      margin-bottom: -3px;
+      max-height: 3em;
+      padding: 30px;
+      transition: 0.2s ease-in 0.2s;
+    }
+  }
+}
 @import './tweak.scss';
 
 #App {
   padding: 0;
-}
-#Nav {
-  // display: none;
 }

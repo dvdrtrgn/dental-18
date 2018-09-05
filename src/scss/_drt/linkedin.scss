@@ -1,16 +1,24 @@
 .linkedin {
+  @import './custom.scss';
+  @import './fancy.scss';
+  @import './numeral.scss';
+  @import './tooth.scss';
+
   // font-size: 1.1rem;
   * {
     box-sizing: border-box;
   }
   & {
     background-color: white;
-    border: 1px solid $lighter;
+    border: 1px solid $light;
+    border-top: 0;
     font-family: $sans;
     line-height: 1.333;
     margin: auto;
     max-width: 46rem;
+    position: relative;
     text-align: left;
+    z-index: 1;
   }
 
   section.inset {

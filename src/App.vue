@@ -1,26 +1,29 @@
 <template>
   <div id="App">
     <div id="Nav">
-      <router-link to="./">LinkedIn</router-link> |
-      <router-link to="./home">Home</router-link> |
-      <router-link to="./about">About</router-link> |
-      <router-link to="./scroll">Scroll</router-link> |
+      <router-link to="/">LinkedIn</router-link>
+      |
+      <router-link to="/home">Home</router-link>
+      |
+      <router-link to="/about">About</router-link>
+      |
+      <router-link to="/scroll">Scroll</router-link>
     </div>
     <router-view/>
   </div>
 </template>
 
 <style lang='scss'>
+/* App.vue */
 body,
 html {
+  background-color: #eee;
   margin: auto;
   scroll-behavior: smooth;
 }
 #App {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  background-color: #eee;
-  border: 1px solid #ddd;
   color: #2c3e50;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   min-height: 100vh;
@@ -32,6 +35,7 @@ html {
   a {
     font-weight: bold;
     color: #2c3e50;
+    padding: 10px;
   }
 
   a.router-link-exact-active {

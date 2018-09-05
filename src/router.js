@@ -1,40 +1,46 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Home from './views/Home.vue';
+import Home from '@/views/Home.vue';
 
 Vue.use(Router);
-var stub = '/wf-ecg/rs/0';
+var stub = '/wf-ecg/rs/0/';
 
 export default new Router({
   routes: [
     {
-      path: stub + '/home',
+      path: '/home',
       name: 'home',
       component: Home,
     },
     {
-      path: stub + '/about',
+      path: '/about',
       name: 'about',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () =>
-        import(/* webpackChunkName: "about" */ './views/About.vue'),
+        import(/* webpackChunkName: "about" */ '@/views/About.vue'),
     },
     {
-      path: stub + '/scroll',
+      path: '/scroll',
       name: 'scroll',
-      component: () => import('./views/Scroll.vue'),
+      component: () => import('@/views/Scroll.vue'),
     },
     {
-      path: stub + '/',
+      path: '/',
       name: 'linkedin',
-      component: () => import('./views/Linkedin.vue'),
+      component: () => import('@/views/Linkedin.vue'),
     },
   ],
+  base: stub,
   mode: 'history',
+  onReady(to, from) {
+    window.console.log('afterEach', [to, from]);
+  },
   scrollBehavior(to, from, savedPosition) {
-    // to, from, savedPosition
+    var ele = window.document.body;
+    ele.classList.replace(from.name, to.name);
+
     if (to.hash) {
       window.console.log('scrollBehavior', [to, from, savedPosition]);
       return {
