@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-    <div id="nav">
+  <div id="App">
+    <div id="Nav">
       <router-link to="./">LinkedIn</router-link> |
       <router-link to="./home">Home</router-link> |
       <router-link to="./about">About</router-link> |
@@ -16,7 +16,7 @@ html {
   margin: auto;
   scroll-behavior: smooth;
 }
-#app {
+#App {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   background-color: #eee;
@@ -27,7 +27,7 @@ html {
   padding: 1em;
   text-align: center;
 }
-#nav {
+#Nav {
   padding: 30px;
   a {
     font-weight: bold;

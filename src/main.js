@@ -9,7 +9,7 @@ new Vue({
   router,
   store,
   render: h => h(App),
-}).$mount('#app');
+}).$mount('#App');
 
 setTimeout(function() {
   var W = window;
