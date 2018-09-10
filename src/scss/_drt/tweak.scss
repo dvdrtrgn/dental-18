@@ -1,0 +1,43 @@
+.cap {
+  text-transform: uppercase;
+}
+.center {
+  text-align: center;
+}
+.columnize {
+  display: flex;
+  justify-content: space-around;
+}
+.enlarge {
+  font-size: 120%;
+}
+.ensmall {
+  font-size: 84%;
+}
+.hide {
+  // display: none;
+  border: 0;
+  clip: rect(1px 1px 1px 1px); /* for Internet Explorer */
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  padding: 0;
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+}
+.light {
+  font-weight: 400;
+}
+.sans {
+  font-family: $sans;
+}
+.serif {
+  font-family: $serif;
+}
+.shade {
+  background-color: $lightest;
+}
+.widen {
+  margin-left: -2em;
+  margin-right: -2em;
+}

@@ -1,0 +1,67 @@
+.linkedin {
+  @import './custom.scss';
+  @import './fancy.scss';
+  @import './numeral.scss';
+  @import './tooth.scss';
+
+  // font-size: 1.1rem;
+  * {
+    box-sizing: border-box;
+  }
+  & {
+    background-color: white;
+    border: 1px solid $light;
+    border-top: 0;
+    font-family: $sans;
+    line-height: 1.333;
+    margin: auto;
+    max-width: 46rem;
+    position: relative;
+    text-align: left;
+    z-index: 1;
+  }
+
+  section.inset {
+    background-image: url("../assets/images/tooth2.png");
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+  }
+  section.inset.shade {
+    background-image: url("../assets/images/tooth1.png");
+  }
+
+  #S1 {
+    background: none;
+    padding-top: 1rem;
+  }
+  #CTA {
+    background: none;
+    padding-top: 0;
+    .widen p:last-child() {
+      border-left: $hair solid $light;
+      padding-left: 4rem;
+    }
+
+  }
+  header.inset {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .inset {
+    padding: 3rem $inset;
+
+    @media (min-width: 0) and (max-width: $break) {
+      padding: 3rem 1rem;
+    }
+  }
+  .outset {
+    margin: 0 -1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    @media (min-width: 0) and (max-width: $break) {
+      margin: 0;
+    }
+  }
+}
