@@ -34,7 +34,7 @@ function aniThis() {
   var sce = new myVue.$scrollmagic.Scene({
     triggerElement: this,
     offset: -222,
-    // reverse: false,
+    reverse: false,
   });
 
   sce.setClassToggle(this, 'ani').addTo(con);

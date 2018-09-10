@@ -1,2 +1,2 @@
 # server          dist      directory
-  vdo DEVS  "$0"  "dist"    "rs/linkedin/dental"
+  vdo DEVS  "$0"  "dist"    "rs/linkedin/dental2"
