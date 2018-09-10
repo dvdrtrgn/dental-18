@@ -1,10 +1,28 @@
 .flow {
-  opacity: 0;
-  transition: all 1s ease-out;
-  transform: translateX(100px);
-
-  &.ani {
+  .slidein {
+    transition: all 1s ease-out;
+    transform: translateX(61.5%);
+    .words {
+      transition: opacity 1s ease-out;
+      opacity: 0;
+    }
+  }
+  .slideup {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+    transform: translateY(50%);
+  }
+}
+.flow.ani {
+  .slidein {
+    transform: translateX(0px);
+    .words {
+      opacity: 1;
+    }
+  }
+  .slideup {
     opacity: 1;
+    transition: opacity 1s ease-out 1s, transform 1s ease-out 0.5s;
     transform: translateX(0px);
   }
 }

@@ -33,17 +33,15 @@ function aniThis() {
   var con = new myVue.$scrollmagic.Controller();
   var sce = new myVue.$scrollmagic.Scene({
     triggerElement: this,
-    offset: -80,
-    reverse: false,
+    offset: -222,
+    // reverse: false,
   });
 
   sce.setClassToggle(this, 'ani').addTo(con);
 }
 
 function ani() {
-  $('section')
-    .addClass('flow')
-    .each(aniThis);
+  $('section').each(aniThis);
 }
 
 window.setTimeout(ani, 999);
