@@ -2,11 +2,6 @@
   @extend .columnize;
   @extend .widen;
 
-  img {
-    height: 10rem;
-    margin: 2rem 2rem 0 0;
-    width: 10rem;
-  }
   p {
     line-height: 1.2;
     margin-bottom: 0;
@@ -22,6 +17,20 @@
     color: $red;
     font-size: 3.2em;
     font-weight: 800;
+  }
+  .chart {
+    padding: 2rem 2rem 0 0;
+
+    img {
+      height: 10rem;
+      width: 10rem;
+      position: relative;
+    }
+    svg {
+      height: 10rem;
+      width: 10rem;
+      position: absolute;
+    }
   }
 }
 
