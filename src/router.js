@@ -3,7 +3,7 @@ import Router from 'vue-router';
 import Home from '@/views/Home.vue';
 
 Vue.use(Router);
-var stub = '/wf-ecg/rs/0/';
+var stub = '/wf-ecg/rs/linkedin/dental';
 
 export default new Router({
   routes: [
