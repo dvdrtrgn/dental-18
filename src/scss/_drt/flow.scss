@@ -1,0 +1,10 @@
+.flow {
+  opacity: 0;
+  transition: all 1s ease-out;
+  transform: translateX(100px);
+
+  &.ani {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}

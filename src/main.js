@@ -3,6 +3,11 @@ import App from './App.vue';
 import router from './router';
 import store from './store';
 
+import KsVueScrollmagic from 'ks-vue-scrollmagic';
+import $ from 'jquery';
+
+Vue.use(KsVueScrollmagic);
+
 Vue.config.productionTip = false;
 
 var myVue = new Vue({
@@ -22,4 +27,23 @@ setTimeout(function() {
   body.classList.add(myVue._route.name);
 }, 99);
 
-window.console.log(myVue);
+// window.console.log(KsVueScrollmagic, myVue);
+
+function aniThis() {
+  var con = new myVue.$scrollmagic.Controller();
+  var sce = new myVue.$scrollmagic.Scene({
+    triggerElement: this,
+    offset: -80,
+    reverse: false,
+  });
+
+  sce.setClassToggle(this, 'ani').addTo(con);
+}
+
+function ani() {
+  $('section')
+    .addClass('flow')
+    .each(aniThis);
+}
+
+window.setTimeout(ani, 999);
