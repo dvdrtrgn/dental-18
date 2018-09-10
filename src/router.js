@@ -3,7 +3,6 @@ import Router from 'vue-router';
 import Home from '@/views/Home.vue';
 
 Vue.use(Router);
-var stub = '/wf-ecg/rs/linkedin/dental2';
 
 export default new Router({
   routes: [
@@ -32,7 +31,7 @@ export default new Router({
       component: () => import('@/views/Linkedin.vue'),
     },
   ],
-  base: stub,
+  base: location.pathname,
   mode: 'history',
   onReady(to, from) {
     window.console.log('afterEach', [to, from]);

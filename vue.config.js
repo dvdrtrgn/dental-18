@@ -1,5 +1,5 @@
 module.exports = {
-  baseUrl: '/wf-ecg/rs/linkedin/dental2/',
+  baseUrl: '/wf-ecg/rs/linkedin/dental/',
   css: {
     loaderOptions: {
       sass: {
