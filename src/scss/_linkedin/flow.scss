@@ -1,6 +1,8 @@
 /* flow.scss */
 
 body.linkedin .linkedin {
+  overflow: hidden;
+
   .flow {
     .slidein {
       transition: all 1s ease-out;

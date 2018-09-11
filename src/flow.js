@@ -2,7 +2,7 @@ import $ from 'jquery';
 
 function Flow(myVue) {
   const Con = new myVue.$scrollmagic.Controller();
-  const rewind = true;
+  const rewind = !true;
 
   function sectionAni() {
     let def = {
