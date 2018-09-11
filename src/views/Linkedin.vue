@@ -23,6 +23,5 @@
 <style lang='scss'>
 /* Linkedin.vue */
 @import url('../assets/fonts/index-wf.css');
-
 @import '@/scss/_linkedin/core.scss';
 </style>

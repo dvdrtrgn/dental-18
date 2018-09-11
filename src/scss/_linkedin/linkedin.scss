@@ -1,11 +1,6 @@
 /* linkedin.scss */
 
-.linkedin {
-  @import '@/scss/_linkedin/custom.scss';
-  @import '@/scss/_linkedin/fancy.scss';
-  @import '@/scss/_linkedin/flow.scss';
-  @import '@/scss/_linkedin/numeral.scss';
-  @import '@/scss/_linkedin/tooth.scss';
+body.linkedin .linkedin {
 
   // font-size: 1.1rem;
   * {
