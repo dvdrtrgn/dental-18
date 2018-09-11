@@ -19,6 +19,7 @@ body.linkedin {
   #Nav {
     background-color: $lighter;
     cursor: none;
+    display: none; // NB: for deploy
     max-height: 1px;
     padding: 0;
     transition: 1s ease-in;

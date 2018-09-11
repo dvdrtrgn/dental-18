@@ -7,9 +7,12 @@
     h1.hide Wells Fargo Health Advantage | LinkedIn Lead Generation Campaign, Dental segment
 
     nav.fancy.columnize
-      h1.hide Bottom navigation
       .logo
         img(src='@/assets/svgs/wf-oneline.svg')
+
+      h1.hide.
+        Bottom navigation
+
       .cta
         a(href='#CTA') Find out how Wells Fargo can help
 
