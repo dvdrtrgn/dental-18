@@ -2,7 +2,7 @@ const NOM = 'API';
 const W = window;
 const C = console;
 
-W._dbug = 1;
+W._dbug = 'https:' == location.protocol ? 0 : 1;
 
 // - - - - - - - - - - - - - - - - - -
 
