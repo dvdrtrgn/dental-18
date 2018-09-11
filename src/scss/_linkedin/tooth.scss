@@ -3,7 +3,9 @@
 body.linkedin .linkedin {
   .tooth {
     @extend .columnize;
-    @extend .widen;
+
+    margin-left: -2em;
+    margin-right: -2em;
 
     p {
       line-height: 1.2;

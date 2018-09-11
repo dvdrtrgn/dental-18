@@ -25,7 +25,8 @@ setTimeout(function() {
   html.classList.add(W._msie ? 'msie' : 'norm');
   body.classList.add(myVue._route.name);
 
-  flow(myVue);
+  flow(myVue); // TODO: fix hack
+  window.Main = myVue;
 }, 99);
 
-window.console.log(myVue);
+// export default myVue;
