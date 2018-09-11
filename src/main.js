@@ -2,7 +2,6 @@ import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
 import store from './store';
-import flow from './flow';
 
 import KsVueScrollmagic from 'ks-vue-scrollmagic';
 Vue.use(KsVueScrollmagic);
@@ -14,6 +13,10 @@ const myVue = new Vue({
   store,
   render: h => h(App),
 }).$mount('#App');
+
+// CUSTOM
+
+import flow from './scripts/flow';
 
 setTimeout(function() {
   const W = window;
