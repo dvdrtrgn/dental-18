@@ -13,7 +13,7 @@ function Flow(myVue) {
       },
     };
     def.scene = new myVue.$scrollmagic.Scene(def.scene);
-    Con.addScene(def.scene.setClassToggle(this, 'ani'));
+    Con.addScene(def.scene.setClassToggle(this, 'ini'));
   }
 
   function flowChart(ele, num) {
@@ -37,9 +37,9 @@ function Flow(myVue) {
   }
 
   setTimeout(function() {
-    flowChart('.tooth .chart svg .line-fill', 999);
+    $('.flow').addClass('ani');
     $('section').each(sectionAni);
-    // $('.flow').addClass('ini');
+    flowChart('.tooth .chart svg .line-fill', 999);
   }, 999);
 }
 
