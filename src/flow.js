@@ -2,7 +2,7 @@ import $ from 'jquery';
 
 function Flow(myVue) {
   const Con = new myVue.$scrollmagic.Controller();
-  const rewind = !true;
+  const rewind = true;
 
   function sectionAni() {
     let def = {
@@ -22,9 +22,10 @@ function Flow(myVue) {
         offset: -111,
         reverse: rewind,
         triggerElement: ele,
+        triggerHook: 'onEnter',
       },
       tween: {
-        delay: 1.5,
+        delay: 2,
         ease: myVue.$gsap.Bounce.easeOut,
         strokeDashoffset: num,
       },

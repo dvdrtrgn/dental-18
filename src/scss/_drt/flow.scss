@@ -1,10 +1,13 @@
 .flow {
   .slidein {
     transition: all 1s ease-out;
-    transform: translateX(61.5%);
+    transform: translateX(calc(50% + 2.5rem + 0.5em)); // (width,offset,char)/2
     .words {
       opacity: 0;
       transition: opacity 1s ease-out;
+    }
+    @media (min-width: 0) and (max-width: $break) {
+      transform: translateX(calc(50% - 0.25rem - 0.5em)); // (width,offset,char)/2
     }
   }
   .slideup {
