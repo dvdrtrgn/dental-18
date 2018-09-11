@@ -21,15 +21,10 @@
   .chart {
     padding: 2rem 2rem 0 0;
 
-    img {
-      height: 10rem;
-      width: 10rem;
-      position: relative;
-    }
     svg {
       height: 10rem;
       width: 10rem;
-      position: absolute;
+      position: relative;
     }
   }
 }
