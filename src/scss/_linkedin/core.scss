@@ -15,7 +15,7 @@ $sans:  wfSans, Verdana, sans-serif;
 $serif: wfSerif, Georgia, serif;
 
 body.linkedin {
-  @import './linkedin.scss';
+  @import '@/scss/_linkedin/linkedin.scss';
 
   #Nav {
     background-color: $lighter;
@@ -32,7 +32,7 @@ body.linkedin {
     }
   }
 }
-@import './tweak.scss';
+@import '@/scss/_linkedin/tweak.scss';
 
 #App {
   padding: 0;
