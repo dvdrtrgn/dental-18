@@ -1,6 +1,6 @@
 /*global ga, */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-  CHANGED 2018-02-23
+  CHANGED 2018-09-11 (removed requirejs)
   IDEA    buffer engagement triggers
   NOTE    interval (def 15s) for analytics
   TODO    ???

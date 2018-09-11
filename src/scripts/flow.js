@@ -1,4 +1,4 @@
-import $ from 'jquery';
+import $ from './jq-xtn';
 
 function Flow(myVue) {
   const Con = new myVue.$scrollmagic.Controller();
@@ -40,7 +40,7 @@ function Flow(myVue) {
     flowChart('.tooth .chart svg .line-fill', 999);
     $('section').each(sectionAni);
     // $('.flow').addClass('ini');
-  }, 1999);
+  }, 999);
 }
 
 export default Flow;

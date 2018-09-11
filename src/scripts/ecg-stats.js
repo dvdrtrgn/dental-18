@@ -1,14 +1,14 @@
 /*global ga, */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-  CHANGED 2018-09-15
+  CHANGED 2018-09-11 (removed requirejs) NB + 1
   IDEA    time page interactions
   NOTE    singleton checks or sends updates at interval (def:1.5s)
   TODO    integrate with beacon better
 
  */
 
-import $ from 'jquery';
 import _ from 'lodash';
+import $ from './jq-xtn';
 import Beacon from './ecg-beacon';
 
 var NOM = 'Stats';
@@ -77,7 +77,7 @@ function _getString(me) {
   str = str || me.attr('aria-label');
   str = str || me.find('img').attr('alt');
   str = str || me.text();
-  str = str || me.attr('href'); // very last resort
+  str = str[1] ? str : me.attr('href'); // very last resort .... NB: if it has a couple chars
   return $.trim(_trim(str));
 }
 

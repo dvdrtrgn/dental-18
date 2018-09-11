@@ -16,7 +16,7 @@ const myVue = new Vue({
 
 // CUSTOM
 
-import flow from './scripts/flow';
+import drt from './scripts/_drt';
 
 setTimeout(function() {
   const W = window;
@@ -28,8 +28,12 @@ setTimeout(function() {
   html.classList.add(W._msie ? 'msie' : 'norm');
   body.classList.add(myVue._route.name);
 
-  flow(myVue); // TODO: fix hack
-  window.Main = myVue;
+  drt.flow(myVue); // TODO: fix hack
+
+  W.Main = {
+    drt: drt,
+    vue: myVue,
+  };
 }, 99);
 
 // export default myVue;
