@@ -32,7 +32,7 @@ export default new Router({
       component: Linkedin,
     },
   ],
-  base: '/wf-ecg/rs/linkedin/dental/',
+  base: 'rs/dental',
   mode: 'history',
   onReady(to, from) {
     window.console.log('afterEach', [to, from]);
