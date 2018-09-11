@@ -1,0 +1,53 @@
+/* custom.scss */
+
+body.linkedin .linkedin {
+  %revdeco {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  main {
+    a {
+      @extend %revdeco;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    header {
+      font-size: 1.1em;
+    }
+    h2 {
+      font-size: 1.7em;
+    }
+    h3 {
+      font-size: 1.5em;
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: $red;
+      font-family: $serif;
+      line-height: 1.2;
+    }
+
+    hr {
+      background: $light;
+      border: 0;
+      height: $hair;
+    }
+
+    .card img {
+      margin-bottom: 1em;
+      width: 8rem;
+    }
+    .hero img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
