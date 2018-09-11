@@ -22,9 +22,10 @@ function Flow(myVue) {
         offset: -111,
         reverse: rewind,
         triggerElement: ele,
+        triggerHook: 'onEnter',
       },
       tween: {
-        delay: 1.5,
+        delay: 2,
         ease: myVue.$gsap.Bounce.easeOut,
         strokeDashoffset: num,
       },
@@ -36,7 +37,7 @@ function Flow(myVue) {
   }
 
   setTimeout(function() {
-    flowChart('.tooth .chart svg .line-fill', 250);
+    flowChart('.tooth .chart svg .line-fill', 999);
     $('section').each(sectionAni);
     // $('.flow').addClass('ini');
   }, 1999);

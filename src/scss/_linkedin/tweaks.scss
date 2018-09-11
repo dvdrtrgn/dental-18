@@ -1,3 +1,5 @@
+/* tweaks.scss */
+
 .cap {
   text-transform: uppercase;
 }
@@ -33,11 +35,4 @@
 }
 .serif {
   font-family: $serif;
-}
-.shade {
-  background-color: $lightest;
-}
-.widen {
-  margin-left: -2em;
-  margin-right: -2em;
 }

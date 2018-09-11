@@ -1,9 +1,6 @@
-.linkedin {
-  @import './custom.scss';
-  @import './fancy.scss';
-  @import './flow.scss';
-  @import './numeral.scss';
-  @import './tooth.scss';
+/* linkedin.scss */
+
+body.linkedin .linkedin {
 
   // font-size: 1.1rem;
   * {
@@ -21,13 +18,13 @@
     text-align: left;
     z-index: 1;
   }
-
   section.inset {
     background-image: url("../assets/images/tooth2.png");
     background-position: 50% 0;
     background-repeat: no-repeat;
   }
   section.inset.shade {
+    background-color: $lightest;
     background-image: url("../assets/images/tooth1.png");
   }
 
@@ -38,9 +35,14 @@
   #CTA {
     background: none;
     padding-top: 0;
+
+    .widen {
+      margin-left: -1em;
+      margin-right: -1em;
+    }
     .widen p:last-child() {
       border-left: $hair solid $light;
-      padding-left: 4rem;
+      padding-left: 3rem;
     }
 
   }

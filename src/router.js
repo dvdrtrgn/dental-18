@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from '@/views/Home.vue';
+import Linkedin from '@/views/Linkedin.vue';
 
 Vue.use(Router);
 
@@ -28,10 +29,10 @@ export default new Router({
     {
       path: '/',
       name: 'linkedin',
-      component: () => import('@/views/Linkedin.vue'),
+      component: Linkedin,
     },
   ],
-  base: location.pathname,
+  base: '/wf-ecg/rs/linkedin/dental/',
   mode: 'history',
   onReady(to, from) {
     window.console.log('afterEach', [to, from]);

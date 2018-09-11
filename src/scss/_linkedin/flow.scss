@@ -1,0 +1,37 @@
+/* flow.scss */
+
+body.linkedin .linkedin {
+  overflow: hidden;
+
+  .flow {
+    .slidein {
+      transition: all 1s ease-out;
+      transform: translateX(calc(50% + 2.5rem + 0.5em)); // (width,offset,char)/2
+      .words {
+        opacity: 0;
+        transition: opacity 1s ease-out;
+      }
+      @media (min-width: 0) and (max-width: $break) {
+        transform: translateX(calc(50% - 0.25rem - 0.5em)); // (width,offset,char)/2
+      }
+    }
+    .slideup {
+      opacity: 0;
+      transition: opacity 1s ease-out;
+      transform: translateY(50%);
+    }
+  }
+  .flow.ani {
+    .slidein {
+      transform: translateX(0px);
+      .words {
+        opacity: 1;
+      }
+    }
+    .slideup {
+      opacity: 1;
+      transition: opacity 1s ease-out 1s, transform 1s ease-out 0.5s;
+      transform: translateX(0px);
+    }
+  }
+}

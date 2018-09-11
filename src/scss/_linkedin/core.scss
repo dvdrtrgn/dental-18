@@ -1,4 +1,5 @@
-@import '../settings.scss';
+/* core.scss */
+
 // colors
 $red: #bb0826; $gold: #fcc60a;
 $light: #ddd;       $gray: #999;    $dark: #44464a;
@@ -14,7 +15,6 @@ $sans:  wfSans, Verdana, sans-serif;
 $serif: wfSerif, Georgia, serif;
 
 body.linkedin {
-  @import './linkedin.scss';
 
   #Nav {
     background-color: $lighter;
@@ -31,8 +31,18 @@ body.linkedin {
     }
   }
 }
-@import './tweak.scss';
 
 #App {
   padding: 0;
+}
+
+@import '@/scss/_linkedin/custom.scss';
+@import '@/scss/_linkedin/fancy.scss';
+@import '@/scss/_linkedin/flow.scss';
+@import '@/scss/_linkedin/numeral.scss';
+@import '@/scss/_linkedin/tooth.scss';
+@import '@/scss/_linkedin/linkedin.scss';
+
+.linkedin {
+  @import '@/scss/_linkedin/tweaks.scss';
 }
