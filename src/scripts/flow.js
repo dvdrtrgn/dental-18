@@ -1,4 +1,4 @@
-import $ from 'jquery';
+import $ from './jq-xtn';
 
 function Flow(myVue) {
   const Con = new myVue.$scrollmagic.Controller();
@@ -13,7 +13,7 @@ function Flow(myVue) {
       },
     };
     def.scene = new myVue.$scrollmagic.Scene(def.scene);
-    Con.addScene(def.scene.setClassToggle(this, 'ani'));
+    Con.addScene(def.scene.setClassToggle(this, 'ini'));
   }
 
   function flowChart(ele, num) {
@@ -37,10 +37,10 @@ function Flow(myVue) {
   }
 
   setTimeout(function() {
-    flowChart('.tooth .chart svg .line-fill', 999);
+    $('.flow').addClass('ani');
     $('section').each(sectionAni);
-    // $('.flow').addClass('ini');
-  }, 1999);
+    flowChart('.tooth .chart svg .line-fill', 999);
+  }, 999);
 }
 
 export default Flow;

@@ -2,7 +2,6 @@ import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
 import store from './store';
-import flow from './flow';
 
 import KsVueScrollmagic from 'ks-vue-scrollmagic';
 Vue.use(KsVueScrollmagic);
@@ -15,6 +14,10 @@ const myVue = new Vue({
   render: h => h(App),
 }).$mount('#App');
 
+// CUSTOM
+
+import drt from './scripts/_drt';
+
 setTimeout(function() {
   const W = window;
   const html = W.document.documentElement;
@@ -25,8 +28,12 @@ setTimeout(function() {
   html.classList.add(W._msie ? 'msie' : 'norm');
   body.classList.add(myVue._route.name);
 
-  flow(myVue); // TODO: fix hack
-  window.Main = myVue;
+  drt.flow(myVue); // TODO: fix hack
+
+  W.Main = {
+    drt: drt,
+    vue: myVue,
+  };
 }, 99);
 
 // export default myVue;
