@@ -3,9 +3,6 @@ import App from './App.vue';
 import router from './router';
 import store from './store';
 
-import KsVueScrollmagic from 'ks-vue-scrollmagic';
-Vue.use(KsVueScrollmagic);
-
 Vue.config.productionTip = false;
 
 const myVue = new Vue({
@@ -35,5 +32,9 @@ setTimeout(function() {
     vue: myVue,
   };
 }, 99);
+
+import KsVueScrollmagic from 'ks-vue-scrollmagic';
+Vue.use(KsVueScrollmagic);
+myVue;
 
 // export default myVue;
