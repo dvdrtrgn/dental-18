@@ -1,4 +1,4 @@
-<template lang='pug'>
+<template lang="pug">
   -
     var CTA = 'https://retailservices.wellsfargo.com/eforms/request-info?';
     CTA += 'utm_source=wfrshp&utm_medium=cta&utm_campaign=contactus';
@@ -23,7 +23,7 @@
     //
 </template>
 
-<style lang='scss'>
+<style lang="scss">
 /* Linkedin.vue */
 @import url('../assets/fonts/index-wf.css');
 @import '@/scss/_linkedin/core.scss';

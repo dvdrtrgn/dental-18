@@ -9,11 +9,11 @@
       |
       <router-link to="/scroll">Test</router-link> -->
     </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
-<style lang='scss'>
+<style lang="scss">
 /* App.vue */
 body,
 html {

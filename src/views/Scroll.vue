@@ -1,8 +1,8 @@
-<template lang='pug'>
+<template lang="pug">
   .scroll
     h1 Mock a scroller
 </template>
 
-<style lang='scss'>
+<style lang="scss">
 /* Scroll.vue */
 </style>

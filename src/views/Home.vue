@@ -1,4 +1,4 @@
-<template lang='pug'>
+<template lang="pug">
   .home
     img(src='../assets/logo.png')
     HelloWorld(msg="Welcome to Your Vue.js App")
