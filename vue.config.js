@@ -1,5 +1,5 @@
 module.exports = {
-  publicPath: 'rs/dental',
+  publicPath: 'dental',
   css: {
     loaderOptions: {
       sass: {
