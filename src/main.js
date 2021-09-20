@@ -13,13 +13,6 @@ import drt from './views/Linkedin/scripts/_drt';
 
 setTimeout(function() {
   const W = window;
-  const html = W.document.documentElement;
-  const body = W.document.body;
-
-  W._msie = Boolean(~W.navigator.userAgent.indexOf('rident'));
-
-  html.classList.add(W._msie ? 'msie' : 'norm');
-  body.classList.add(myVue._route.name);
 
   drt.flow(myVue); // TODO: fix hack
 
@@ -31,6 +24,3 @@ setTimeout(function() {
 
 import KsVueScrollmagic from 'ks-vue-scrollmagic';
 Vue.use(KsVueScrollmagic);
-myVue;
-
-// export default myVue;
