@@ -23,6 +23,10 @@
   //
 </template>
 
+<script>
+export default {};
+</script>
+
 <style lang="scss">
 /* Linkedin.vue */
 @import url('../assets/fonts/index-wf.css');
