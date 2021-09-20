@@ -37,13 +37,13 @@ body.linkedin {
   padding: 0;
 }
 
-@import '@/scss/_linkedin/custom.scss';
-@import '@/scss/_linkedin/fancy.scss';
-@import '@/scss/_linkedin/flow.scss';
-@import '@/scss/_linkedin/numeral.scss';
-@import '@/scss/_linkedin/tooth.scss';
-@import '@/scss/_linkedin/linkedin.scss';
+@import '@/scss/custom.scss';
+@import '@/scss/fancy.scss';
+@import '@/scss/flow.scss';
+@import '@/scss/numeral.scss';
+@import '@/scss/tooth.scss';
+@import '@/scss/linkedin.scss';
 
 .linkedin {
-  @import '@/scss/_linkedin/tweaks.scss';
+  @import '@/scss/tweaks.scss';
 }
