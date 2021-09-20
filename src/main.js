@@ -13,7 +13,7 @@ const myVue = new Vue({
 
 // CUSTOM
 
-import drt from './scripts/_drt';
+import drt from './views/Linkedin/scripts/_drt';
 
 setTimeout(function() {
   const W = window;
