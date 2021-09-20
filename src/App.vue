@@ -1,17 +1,15 @@
 <template>
   <div id="App">
-    <div id="Nav">
-      <router-link to="/">LinkedIn v2</router-link>
-      <!-- |
-      <router-link to="/home">Home</router-link>
-      |
-      <router-link to="/about">About</router-link>
-      |
-      <router-link to="/scroll">Test</router-link> -->
-    </div>
-    <router-view />
+    <Linkedin />
   </div>
 </template>
+
+<script>
+import Linkedin from '@/views/Linkedin.vue';
+export default {
+  components: { Linkedin },
+};
+</script>
 
 <style lang="scss">
 /* App.vue */
@@ -29,17 +27,5 @@ html {
   min-height: 100vh;
   padding: 1em;
   text-align: center;
-}
-#Nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    padding: 10px;
-  }
-
-  a.router-link-exact-active {
-    color: #42b983;
-  }
 }
 </style>
